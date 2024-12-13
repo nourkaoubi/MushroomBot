@@ -37,8 +37,8 @@
     </ol>
     <br>
     <i><b>Screenshots of the bot's work:</b></i>   
-    <img src='https://github.com/K1rsN7/Mushroom_Guide/blob/main/image1.png'>
-    <img src='https://github.com/K1rsN7/Mushroom_Guide/blob/main/image2.png'>
-    <img src='https://github.com/K1rsN7/Mushroom_Guide/blob/main/image3.png'>
+    <img src='https://github.com/nourkaoubi/MushroomBot/blob/main/chatbot.png'>
+    <img src='https://github.com/nourkaoubi/MushroomBot/blob/main/chatbot1.png'>
+    <img src='https://github.com/nourkaoubi/MushroomBot/blob/main/chatbot2.png'>
   </div>
 </div>
