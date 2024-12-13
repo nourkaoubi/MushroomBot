@@ -10,7 +10,8 @@ from aiogram import F
 from keras._tf_keras.keras.models import load_model
 from keras._tf_keras.keras.applications.densenet import preprocess_input
 from keras._tf_keras.keras.preprocessing.image import img_to_array
-API_TOKEN = '7951383953:AAFuJc8FxrUGdsYnaWy6SM4wMvjAdOKvalk'
+
+API_TOKEN = 'your_bot_api_token'
 
 path = './photos'
 
@@ -61,7 +62,6 @@ async def send_welcome(message: Message):
         "I can classify mushrooms as: edible, inedible, poisonous, or hallucinogenic."
     )
 
-
 @router.message(Command(commands=['help']))
 async def process_help_command(message: Message):
     await message.reply("Send me a photo of the mushroom, and I'll tell you whether you can eat it or not.")
@@ -73,8 +73,6 @@ async def handle_docs_photo(message: Message):
         photo = message.photo[-1]  # Get the best resolution photo
         file = await bot.get_file(photo.file_id)
         file_path = f'{path}/{photo.file_id}.jpg'
-
-        # Download the photo
         await bot.download_file(file.file_path, destination=file_path)
 
         # Process the image
